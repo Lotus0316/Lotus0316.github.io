@@ -3380,13 +3380,6 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
-}
 #page-header.full_page {
   height: 100vh;
   background-attachment: fixed;
@@ -4707,6 +4700,21 @@ h1.page-title + .tag-cloud-list {
   #rightside #hide-aside-btn {
     display: none;
   }
+}
+#rightside #go-up .scroll-percent {
+  display: none;
+}
+#rightside #go-up.show-percent .scroll-percent {
+  display: block;
+}
+#rightside #go-up.show-percent .scroll-percent + i {
+  display: none;
+}
+#rightside #go-up:hover .scroll-percent {
+  display: none;
+}
+#rightside #go-up:hover .scroll-percent + i {
+  display: block;
 }
 #sidebar #menu-mask {
   position: fixed;
